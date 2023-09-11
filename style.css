@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background: linear-gradient(45deg,#4c5180, #004e92);
+}
+/* #page1{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#93A5CF,  #E4EfE9);
+} */
+nav{
+    height: 30px;
+    width: 100px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #000000;
+    box-shadow: 0px 1px 5px 1px #7cbbf9;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all 1s;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+nav:hover{
+    /* height: 10%; */
+    width: 95%;
+    height: 35px;
+    background-color: #000000;
+    box-shadow: #3880bb 0px 1px 10px 5px;
+}
+nav h3{
+    color: aliceblue;
+    font-size: 20px;
+    margin-right: 40%;
+    margin-left: 20px;
+    text-align: center;
+    height: 20%;
+    /* background-color: rgba(153, 202, 255, 0.59); */
+    align-items: center;
+    display: flex;
+}
+nav a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* .cards{
+    background-color: #e5ecf3;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #007bf7;
+    height: 10%;
+    width: 100px;
+    margin: auto;
+}
+.card img{
+    width: 90%;
+} */
+.head{
+    position: relative;
+    margin-top: 100px;
+    font-size: 20px;
+    /* font-family: 'Klee One', cursive; */
+    font-family: 'Ms Madi', cursive;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    word-spacing: 15px;
+}
+.head span{
+    text-decoration: line-through;
+    text-decoration-color: #fdfeff;
+    color: #474747;
+}
+.cards{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: -20px;
+    padding-top: 100px;
+}
+/* button{
+    margin-top: 30px;
+    width: 150px;
+    height: 20px;
+    background-color:black;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+button:hover{
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+} */
+.card p{
+    margin-top: 14px;
+    font-size: 13px;
+}
+.bot{
+    color: #000000;
+    font-size: 10px;
+    text-align: center;
+    width: 50%;
+    margin-top: 30px;
+    background-color: rgba(207, 150, 69, 0.943);
+}
+#dis{
+    margin-left: -100px;
+    pointer-events: none;  
+    width:1px; 
+    height: 0px;
+    background: transparent;
+    color: aliceblue;
+    box-shadow: none;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    background-color: #2b5a9c72;
+    border-radius: 10px;
+    padding: 20px;
+    /* padding-top: 80px; */
+    margin: 50px;
+    /* margin-top: 20px; */
+    /* text-align: center; */
+    box-shadow: #00000052 0px 5px 1px 1px;
+    /* overflow: hidden; */
+    position:relative;
+    transition: all 1s;
+    color: #000000;
+    text-transform: uppercase;
+}
+.card:hover{
+    color: rgb(255, 255, 255);
+    background-color: #7cbbf9;
+    margin-top: 1%;
+    /* transform: translateX(-50px);
+    transform: translateY(-50px); */
+    box-shadow: #000000fa 0px 60px 70px -50px;
+    border: 2px solid rgb(0, 0, 0);
+    /* z-index: 1000;  use in tranding section and comment margin in .card */
+}
+
+/* .card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 350px;
+    width: 400px;
+    min-width: 250px;
+    padding: 30;
+    border-radius: 16px;
+    background: #000000;
+    box-shadow: -20px 0 60px rgb(41, 41, 41);
+} */
+  
+.box {
+    width: 80%;
+    height: 30px;
+    margin: 15px;
+    background: rgb(0, 0, 0);
+    border: 2px solid #fff;
+    border-radius: 20px/50px;
+    padding: 2px;
+    /* background-clip: padding-box; */
+    text-align: center;
+    
+}
+  
+.button{
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+    padding: 5px;
+    color: #fff;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #00000050;
+    transition: all 1s ease-out;
+}
+.button:hover{
+    background-color: #000000;
+    border: 2px solid #ffffff;
+}
+   
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg,#7F7FD5 ,  #91EAE4);
+    /* transition: opacity 500ms; */
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    transition: all 0.5s;
+    overflow: visible;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+  
+.popup {
+    margin: 150px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    pointer-events: all;
+    
+}
+.popup .close:hover {
+    color: #056dff;
+}
+.popup p {
+    height: 100%;
+    overflow: auto;
+    color: #000000fa;
+    font-size: 20px;
+    
+}
+  
+@media  (max-width: 700px){
+    .box{
+      width: 70%;
+    }
+    .popup{
+      width: 70%;
+    }
+}
